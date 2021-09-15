@@ -68,9 +68,15 @@ public class UserController {
     }
 
 
+<<<<<<< HEAD
     @GetMapping(value = "findByPhoneNumber")
     public User findByPhoneNumber(@RequestBody PhoneNumber phoneNumber) {
         return userService.findByPhoneNumber(phoneNumber.getPhoneNumber());
+=======
+    @GetMapping("get")
+    public User findByPhoneNumber(@RequestBody String phoneNumber) {
+        return userService.findByPhoneNumber(phoneNumber);
+>>>>>>> 95ace55bb7762c02623c0d90962014b502d30331
     }
 
 

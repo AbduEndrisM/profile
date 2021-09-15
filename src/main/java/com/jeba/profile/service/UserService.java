@@ -56,9 +56,12 @@ public class UserService implements IUserService{
         if(user.getEmail()!=null){
             userToBeUpdated.setEmail(user.getEmail());
         }
+<<<<<<< HEAD
         if(user.getPassword()!=null){
             userToBeUpdated.setPassword(user.getPassword());
         }
+=======
+>>>>>>> 95ace55bb7762c02623c0d90962014b502d30331
     }
 
     @Override
@@ -115,12 +118,21 @@ throw new UnsupportedOperationException("No user found") ;
 
     @Override
     public User findByPhoneNumber(String phoneNumber) {
+<<<<<<< HEAD
 //        if(phoneNumber.length()==10 && phoneNumber.charAt(0)==0){
 //            phoneNumber = phoneNumber.substring(1);
 //        }
 //        if(phoneNumber.charAt(0)!=9){
 //            return null; // TODO: throw incorrect number exception - handle it at UI level as well
 //        }
+=======
+        if(phoneNumber.length()==10 && phoneNumber.charAt(0)==0){
+            phoneNumber = phoneNumber.substring(1);
+        }
+        if(phoneNumber.charAt(0)!=9){
+            return null; // TODO: throw incorrect number exception - handle it at UI level as well
+        }
+>>>>>>> 95ace55bb7762c02623c0d90962014b502d30331
         return userAdapter.findByPhoneNumber(phoneNumber);
     }
 
